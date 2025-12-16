@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VinylHub — Корзина</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body data-page="cart">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a href="/" class="logo">VinylHub</a>
+        <nav class="nav">
+          <a href="/catalog.html">Каталог</a>
+          <a href="/about.html">О проекте</a>
+          <a href="/cart.html" class="nav-cart active">Корзина</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="page-head">
+        <h1>Корзина</h1>
+        <p>Проверьте товары, измените количество и переходите к оформлению.</p>
+      </section>
+      <section class="cart-layout">
+        <div class="cart-list" id="cart-list"></div>
+        <div class="cart-summary" id="cart-summary">
+          <h2>Итог</h2>
+          <p class="muted">Стоимость без учета доставки</p>
+          <div class="summary-row">
+            <span>Сумма</span>
+            <strong id="cart-total">0 ₽</strong>
+          </div>
+          <a class="btn primary full" href="/checkout.html">Оформить</a>
+        </div>
+        <div id="cart-empty" class="empty muted">Корзина пуста</div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">VinylHub</div>
+          <p>Онлайн-магазин винила и подборка культовых релизов.</p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <a href="/catalog.html">Каталог</a>
+          <a href="/cart.html">Корзина</a>
+          <a href="/about.html">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

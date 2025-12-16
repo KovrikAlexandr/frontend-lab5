@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VinylHub — Главная</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a href="/" class="logo">VinylHub</a>
+        <nav class="nav">
+          <a href="/catalog.html">Каталог</a>
+          <a href="/about.html">О проекте</a>
+          <a href="/cart.html" class="nav-cart">Корзина</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">VinylHub</p>
+          <h1>Найдите пластинки, которые будут звучать долго</h1>
+          <p class="lead">
+            Каталог с жанрами, артистами и редкими изданиями. Умные фильтры, адаптивный интерфейс и
+            красивый звук на ваших проигрывателях.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="/catalog.html">Смотреть каталог</a>
+            <a class="btn ghost" href="/about.html">О проекте</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="vinyl"></div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="section-head">
+          <h2>Категории</h2>
+          <a class="link" href="/catalog.html">К каталогу</a>
+        </div>
+        <div class="cards" id="category-grid">
+          <article class="card">Рок</article>
+          <article class="card">Джаз</article>
+          <article class="card">Хип-хоп</article>
+          <article class="card">Электроника</article>
+          <article class="card">Соул / R&B</article>
+          <article class="card">Арт-поп</article>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="section-head">
+          <h2>Популярные пластинки</h2>
+          <a class="link" href="/catalog.html">Все пластинки</a>
+        </div>
+        <div class="cards" id="popular-list"></div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">VinylHub</div>
+          <p>Онлайн-магазин винила и подборка культовых релизов.</p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <a href="/catalog.html">Каталог</a>
+          <a href="/cart.html">Корзина</a>
+          <a href="/about.html">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VinylHub — Пластинка</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body data-page="product">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a href="/" class="logo">VinylHub</a>
+        <nav class="nav">
+          <a href="/catalog.html">Каталог</a>
+          <a href="/about.html">О проекте</a>
+          <a href="/cart.html" class="nav-cart">Корзина</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="product-layout" id="product-detail">
+        <div class="product-cover shimmer"></div>
+        <div class="product-info">
+          <p class="eyebrow" id="product-genre"></p>
+          <h1 id="product-title" class="skeleton">Загрузка...</h1>
+          <p id="product-artist" class="muted skeleton"></p>
+          <p id="product-description" class="muted skeleton"></p>
+          <dl class="product-meta">
+            <div>
+              <dt>Цена</dt>
+              <dd id="product-price" class="skeleton"></dd>
+            </div>
+            <div>
+              <dt>Наличие</dt>
+              <dd id="product-stock" class="skeleton"></dd>
+            </div>
+          </dl>
+          <div class="product-actions">
+            <label for="product-qty">Количество</label>
+            <div class="qty-control">
+              <button type="button" class="qty-btn" data-qty-dec>-</button>
+              <input type="number" id="product-qty" value="1" min="1" step="1" />
+              <button type="button" class="qty-btn" data-qty-inc>+</button>
+            </div>
+            <button class="btn primary" id="add-to-cart">В корзину</button>
+          </div>
+          <div id="product-error" class="error hidden"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">VinylHub</div>
+          <p>Онлайн-магазин винила и подборка культовых релизов.</p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <a href="/catalog.html">Каталог</a>
+          <a href="/cart.html">Корзина</a>
+          <a href="/about.html">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

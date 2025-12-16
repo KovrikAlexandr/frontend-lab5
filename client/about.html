@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VinylHub — О проекте</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body data-page="about">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a href="/" class="logo">VinylHub</a>
+        <nav class="nav">
+          <a href="/catalog.html">Каталог</a>
+          <a href="/about.html" class="active">О проекте</a>
+          <a href="/cart.html" class="nav-cart">Корзина</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="page-head">
+        <h1>О проекте</h1>
+        <p>VinylHub — магазин винила</p>
+      </section>
+      <section class="about-grid">
+        <div class="card">
+          <h3>Стек</h3>
+          <ul>
+            <li>Frontend: Vite, SCSS, Fetch API, ES-модули</li>
+            <li>Backend: Node 18, Express, PostgreSQL, pg</li>
+            <li>Инфраструктура: Docker, Docker Compose, .env</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Архитектура</h3>
+          <p>
+            MPA с отдельными страницами каталога, карточки товара, корзины и оформления. Общий JS-модуль
+            и сервисы для API, корзины и локального хранилища.
+          </p>
+        </div>
+        <div class="card">
+          <h3>API</h3>
+          <p>REST: список товаров, товар по id, создание заказа. Формат JSON, валидация на backend.</p>
+        </div>
+        <div class="card">
+          <h3>Дальше</h3>
+          <p>Авторизация, админ-панель, платежи, интеграции с внешними API.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">VinylHub</div>
+          <p>Онлайн-магазин винила и подборка культовых релизов.</p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <a href="/catalog.html">Каталог</a>
+          <a href="/cart.html">Корзина</a>
+          <a href="/about.html">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

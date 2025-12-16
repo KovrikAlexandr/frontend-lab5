@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VinylHub — Оформление</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body data-page="checkout">
+    <header class="site-header">
+      <div class="container header-bar">
+        <a href="/" class="logo">VinylHub</a>
+        <nav class="nav">
+          <a href="/catalog.html">Каталог</a>
+          <a href="/about.html">О проекте</a>
+          <a href="/cart.html" class="nav-cart">Корзина</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="page-head">
+        <h1>Оформление заказа</h1>
+        <p>Заполните контакты и подтвердите заказ. Все поля обязательны.</p>
+      </section>
+      <section class="checkout-grid">
+        <form id="checkout-form" novalidate>
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required />
+            <span class="form-error" data-error-for="name"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <span class="form-error" data-error-for="email"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required />
+            <span class="form-error" data-error-for="phone"></span>
+          </div>
+          <button class="btn primary full" type="submit">Отправить заказ</button>
+          <div id="checkout-message" class="muted"></div>
+        </form>
+        <aside class="cart-summary" id="checkout-summary">
+          <h2>Ваш заказ</h2>
+          <div id="checkout-items" class="summary-list"></div>
+          <div class="summary-row">
+            <span>Сумма</span>
+            <strong id="checkout-total">0 ₽</strong>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo">VinylHub</div>
+          <p>Онлайн-магазин винила и подборка культовых релизов.</p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <a href="/catalog.html">Каталог</a>
+          <a href="/cart.html">Корзина</a>
+          <a href="/about.html">О проекте</a>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
